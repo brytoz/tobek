@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
   return (
     <div className="scroll-smooth">
       <Parallax
-        blur={{ min: -8, max: 8 }}
+        blur={{ min: -1, max: 10 }}
         className="bg-cover object-cover bg-gradient-to-r from-gray-700 via-gray-900 to-black"
         bgImage={F01}
       >
