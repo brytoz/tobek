@@ -13,6 +13,14 @@ import f0 from "../../assets/f0.jpg"
 import f01 from "../../assets/f01.jpg"
 import logo from "../../assets/tobek.png"
 
+import x01 from "../../assets/x01.jpeg"
+import x02 from "../../assets/x02.jpeg"
+import x03 from "../../assets/x03.jpeg"
+import x04 from "../../assets/x04.jpeg"
+import x05 from "../../assets/x05.jpeg"
+import x06 from "../../assets/x06.jpeg"
+import x07 from "../../assets/x07.jpeg"
+
 
 export const LOGO = logo
 export const ERROR = error
@@ -28,3 +36,11 @@ export const F7 = f7
 export const F8 = f8
 export const F9 = f9
 export const F0 = f0
+
+export const X01 = x01
+export const X02 = x02
+export const X03 = x03
+export const X04 = x04
+export const X05 = x05
+export const X06 = x06
+export const X07 = x07

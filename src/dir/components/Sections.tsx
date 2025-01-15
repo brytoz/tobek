@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
-import { F8 } from "./images";
+import {   X01 } from "./images";
 import { Link } from "react-router-dom";
 
 const Sections: React.FC = () => {
@@ -12,7 +12,7 @@ const Sections: React.FC = () => {
       >
         <div className=" w-full h-full bg-inherit  md:w-[40%]    justify-center items-center  hidden md:inline-block lg:mr-6 ">
           <motion.img
-            src={F8}
+            src={X01}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1 }}
             whileInView={{ opacity: 1 }}

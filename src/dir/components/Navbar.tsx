@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setNavbarBg("bg-white shadow-md border-b text-black ");
+        setNavbarBg("bg-white shadow-md border-b text-white ");
       } else {
         setNavbarBg("bg-transparent border-0 text-white");
       }
