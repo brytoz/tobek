@@ -2094,7 +2094,7 @@ body.has-no-comments .comment-respond {
 @media (min-width: 992px) {
   .small-bg-about-us {
     background-image: url("../images/home/bg-texture.png"),
-      url("../images/about-us/a1.jpg");
+      url("../assets/x07.jpeg");
     background-position: left top, right top;
     background-size: 50%, 50%;
     background-repeat: repeat, no-repeat;
