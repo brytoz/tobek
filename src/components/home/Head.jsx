@@ -34,13 +34,13 @@ const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
     >
       <Overlay>
         <div className="wrap">
-          <div className="title">Basic Slider</div>
-          <div className="sub">Slides' background attachment set to fixed</div>
+          <div className="title">The Food Processing Service You Can Trust.</div>
+          <div className="sub">We specialize in transforming and transporting raw ingredients into high-quality, delicious, and nutritious products that bring convenience and joy to your dining table.</div>
         </div>
       </Overlay>
       <Slide
         background={{
-          backgroundImage: rockyWaterfall,
+          backgroundImageSrc: rockyWaterfall,
           backgroundAttachment: "fixed",
           // backgroundColor:"red",
         }}
@@ -49,7 +49,7 @@ const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
 
       <Slide
         background={{
-          backgroundImage: X01,
+          backgroundImageSrc: X01,
           backgroundAttachment: "fixed",
         }}
         className="100vh"
@@ -57,7 +57,7 @@ const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
 
       <Slide
         background={{
-          backgroundImage: X07,
+          backgroundImageSrc: X07,
           backgroundAttachment: "fixed",
         }}
         className="100vh"
@@ -65,7 +65,7 @@ const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
 
       <Slide
         background={{
-          backgroundImage: X05,
+          backgroundImageSrc: X05,
           backgroundAttachment: "fixed",
         }}
         className="100vh"

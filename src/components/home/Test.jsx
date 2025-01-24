@@ -3,7 +3,7 @@ import React from "react";
 import HeroSlider, { Slide, SideNav, ButtonsNav, Overlay } from "hero-slider";
 import "./wrap.css";
 import { X01, X02, X03, X04 } from "../images";
-import 'hero-slider/dist/index.css';
+import "hero-slider/dist/index.css";
 
 // Images
 const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
@@ -23,21 +23,27 @@ const Test = () => {
       onChange={(nextSlide) => console.log("onChange", nextSlide)}
       onAfterChange={(nextSlide) => console.log("onAfterChange", nextSlide)}
       style={{
-        backgroundColor: "#000",
+        backgroundColor: "rgba(0, 0, 0, 0.40)",
       }}
       settings={{
         slidingDuration: 400,
         slidingDelay: 100,
         shouldAutoplay: true,
         shouldDisplayButtons: true,
-        autoplayDuration: 8000,
+        autoplayDuration: 1000,
         height: "100vh",
       }}
     >
       <Overlay>
         <div className="wrap">
-          <div className="title">Basic Slider</div>
-          <div className="sub">Slides' background attachment set to fixed</div>
+          <div className="title ubuntu-bold">
+            The Food Processing Service You Can Trust.
+          </div>
+          <div className="sub logo">
+            We specialize in transforming and transporting raw ingredients into
+            high-quality, delicious, and nutritious products that bring
+            convenience and joy to your dining table.
+          </div>
         </div>
       </Overlay>
 
@@ -45,10 +51,10 @@ const Test = () => {
         shouldRenderMask
         navDescription="Rocky Waterfall"
         background={{
-          backgroundColor: "#2D7791",
+        backgroundColor: "rgba(0, 0, 0, 0.40)",
           backgroundBlendMode: "luminosity",
           maskBackgroundBlendMode: "luminosity",
-          backgroundImage: X04,
+          backgroundImageSrc: X04,
         }}
       />
 
@@ -59,7 +65,7 @@ const Test = () => {
           backgroundColor: "#8A8A8A",
           backgroundBlendMode: "luminosity",
           maskBackgroundBlendMode: "luminosity",
-          backgroundImage: X02,
+          backgroundImageSrc: X02,
         }}
       />
 
@@ -70,7 +76,7 @@ const Test = () => {
           backgroundColor: "#EA2329",
           backgroundBlendMode: "luminosity",
           maskBackgroundBlendMode: "luminosity",
-          backgroundImage: X03,
+          backgroundImageSrc: X03,
         }}
       />
 
@@ -81,7 +87,7 @@ const Test = () => {
           backgroundColor: "#6D9B98",
           backgroundBlendMode: "luminosity",
           maskBackgroundBlendMode: "luminosity",
-          backgroundImage: X04,
+          backgroundImageSrc: X04,
         }}
       />
 

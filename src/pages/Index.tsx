@@ -10,8 +10,8 @@ const Index = () => {
   return (
     <div className="m-0">
       <Nav />
-      {/* <Head /> */}
-      <Test />
+      <Head />
+      {/* <Test /> */}
 
       <Why />
 
