@@ -7,7 +7,7 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ productName, image }) => {
   return (
-    <div className="rounded-lg border border-[#dfd7c3] bg-[#dfd7c3] p-6 shadow-sm  z-10 ">
+    <div className="rounded-lg border border-[#dfd7c3] bg-[#dfd7c3] p-6 shadow-sm  z-5 ">
       <div className="h-96 lg:h-72 w-full">
         <img
           className="mx-auto  contain h-full w-full cover"

@@ -1,15 +1,10 @@
 import React from "react";
 // JSX
-import HeroSlider, { Slide, SideNav, ButtonsNav, Overlay } from "hero-slider";
+import HeroSlider, { Slide,  Overlay } from "hero-slider";
 import "./wrap.css";
 import { X01, X02, X03, X04 } from "../images";
 import "hero-slider/dist/index.css";
 
-// Images
-const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
-const palauPacificOcean = "https://i.imgur.com/8sPDZCg.jpg";
-const queposCostaRica = "https://i.imgur.com/cdKGQ0Z.jpg";
-const mountainView = "https://i.imgur.com/w4jfAOJ.jpg";
 
 const Test = () => {
   return (
@@ -30,16 +25,16 @@ const Test = () => {
         slidingDelay: 100,
         shouldAutoplay: true,
         shouldDisplayButtons: true,
-        autoplayDuration: 1000,
+        autoplayDuration: 2000,
         height: "100vh",
       }}
     >
       <Overlay>
-        <div className="wrap">
-          <div className="title ubuntu-bold">
-            The Food Processing Service You Can Trust.
+        <div className="wrap" style={{ backgroundColor: "rgba(0, 0, 0, 0.50)" }}  >
+          <div className="title ubuntu-bold text-white text-[2.9rem] md:text-[3.5rem]">
+            The <span className="text-[#d27219]"> Food  Processing </span> Service You Can Trust.
           </div>
-          <div className="sub logo">
+          <div className="sub logo text-white text-xl text-[1.5rem]">
             We specialize in transforming and transporting raw ingredients into
             high-quality, delicious, and nutritious products that bring
             convenience and joy to your dining table.

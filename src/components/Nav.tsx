@@ -54,7 +54,7 @@ const Nav: React.FC<NavProps> = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="transition-all duration-500 absolute top-0 right-0 w-1/2 h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 z-30">
+          <nav className="transition-all duration-500 absolute top-0 right-0 w-1/2 h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 z-100">
             <button
               className="block md:hidden text-5xl absolute top-2 right-2"
               onClick={() => setIsMenuOpen(false)}

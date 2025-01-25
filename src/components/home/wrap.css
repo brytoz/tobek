@@ -16,8 +16,7 @@
     padding: 0;
     text-transform: uppercase;
     width: 90%;
-    text-align: center;
-    font-size: 3.5rem;
+    text-align: center; 
   }
 
   .sub {
@@ -25,5 +24,5 @@
     padding: 0;
     width: 80%;
     text-align: center;
-    font-size: 1.75rem;
+
   }

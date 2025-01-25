@@ -1,19 +1,18 @@
-import React from "react";
 import HeroSlider, { Overlay, Slide, Nav } from "hero-slider";
 import "./wrap.css";
 import { X01, X03, X05, X07 } from "../images";
-import 'hero-slider/dist/index.css';
+import "hero-slider/dist/index.css";
 
 // Images
 
 const Head = () => {
 
-const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
-
   return (
     <HeroSlider
       slidingAnimation="left_to_right"
+      // slidingAnimation="fade"
       orientation="horizontal"
+      // initialSlide={0}
       initialSlide={1}
       onBeforeChange={(previousSlide, nextSlide) =>
         console.log("onBeforeChange", previousSlide, nextSlide)
@@ -21,26 +20,33 @@ const rockyWaterfall = "https://i.imgur.com/OE5CoEX.jpg";
       onChange={(nextSlide) => console.log("onChange", nextSlide)}
       onAfterChange={(nextSlide) => console.log("onAfterChange", nextSlide)}
       style={{
-        backgroundColor: "rgba(0, 0, 0, 0.10)",
+        backgroundColor: "#000",
+        // backgroundColor: "rgba(0, 0, 0, 0.10)",
       }}
       settings={{
         slidingDuration: 250,
         slidingDelay: 100,
         shouldAutoplay: true,
         shouldDisplayButtons: true,
-        autoplayDuration: 5000,
+        autoplayDuration: 5000, 
         height: "100vh",
       }}
     >
       <Overlay>
-        <div className="wrap">
-          <div className="title">The Food Processing Service You Can Trust.</div>
-          <div className="sub">We specialize in transforming and transporting raw ingredients into high-quality, delicious, and nutritious products that bring convenience and joy to your dining table.</div>
+        <div className="wrap" style={{ backgroundColor: "rgba(0, 0, 0, 0.50)" }}  >
+          <div className="title text-white ubuntu-bold">
+            The Food Processing Service You Can Trust.
+          </div>
+          <div className="sub text-white logo">
+            We specialize in transforming and transporting raw ingredients into
+            high-quality, delicious, and nutritious products that bring
+            convenience and joy to your dining table.
+          </div>
         </div>
       </Overlay>
       <Slide
         background={{
-          backgroundImageSrc: rockyWaterfall,
+          backgroundImageSrc: X03,
           backgroundAttachment: "fixed",
           // backgroundColor:"red",
         }}

@@ -1,6 +1,6 @@
 import Nav from "../components/Nav";
-import Head from "../components/home/Head";
-import Test from "../components/home/Test"
+// import Head from "../components/home/Head"; 
+import Test from "../components/home/Test"; 
 import Why from "../components/home/Why";
 import ContactComp from "../components/home/ContactComp";
 import Footer from "../components/Footer";
@@ -10,8 +10,9 @@ const Index = () => {
   return (
     <div className="m-0">
       <Nav />
-      <Head />
-      {/* <Test /> */}
+      {/* <Head /> */}
+      <Test />
+
 
       <Why />
 
