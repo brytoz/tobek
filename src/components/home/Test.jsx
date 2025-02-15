@@ -30,7 +30,7 @@ const Test = () => {
       }}
     >
       <Overlay>
-        <div className="wrap" style={{ backgroundColor: "rgba(0, 0, 0, 0.50)" }}  >
+        <div className="wrap" style={{ backgroundColor: "rgba(0, 0, 0, 0.30)" }}  >
           <div className="title ubuntu-bold text-white text-[2.9rem] md:text-[3.5rem]">
             The <span className="text-[#d27219]"> Food  Processing </span> Service You Can Trust.
           </div>
