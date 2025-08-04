@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://tobekfoods.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/coreui": "^5.3.2",
+    "@coreui/react": "^5.5.0",
     "@tailwindcss/vite": "^4.0.0",
     "hero-slider": "^3.2.1",
     "prop-types": "^15.8.1",
