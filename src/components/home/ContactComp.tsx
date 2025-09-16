@@ -10,8 +10,8 @@ const ContactComp = () => {
       </div>
       <div className="w-full h-auto md:w-1/2 bg-[#dfd7c3] rounded flex-wrap md:flex items-center p-6 md:pl-18 z-10">
         <div className="space-y-2 pt-8 md:pt-0">
-          <div className="text-[#7b0f0f]/80 font-bold">Need help?</div>
-          <div className="text-[#7b0f0f] font-black text-2xl">Ask us anything directly</div>
+          <div className="bg-gradient-to-r from-orange-700 to-yello-900 bg-clip-text text-transparent font-bold">Need help?</div>
+          <div className=" font-black text-2xl bg-gradient-to-r from-orange-700 to-yello-900 bg-clip-text text-transparent">Ask us anything directly</div>
           <div className="text-base md:text-sm leading-6 text-black/60 font-medium">
             We’re here to help! Have questions or need more information? Feel
             free to reach out—send us an email or drop us a message anytime.
@@ -19,7 +19,7 @@ const ContactComp = () => {
           </div>
 
           <div className="pt-4">
-            <a href="mailto:info@tobekfoods.com" className="rounded-full px-8 py-4 bg-[#7b0f0f] hover:bg-[#7b0f0f]/80 font-black text-white text-base md:text-sm "> Mail Us</a>
+            <a href="mailto:info@tobekfoods.com" className="rounded-full px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white/90 font-black text-base md:text-sm "> Mail Us</a>
           </div>
         </div>
       </div>

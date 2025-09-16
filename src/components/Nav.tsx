@@ -11,7 +11,7 @@ const Nav: React.FC<NavProps> = () => {
         <div className="w-1/5">
           <a href="/" className="flex items-center ">
             <img src={LOGO} alt="logo" className="w-6 md:w-8 h-6 md:h-8" />
-            <span className="ml-2 textbase md:text-2xl font-black logo-color">
+            <span className="ml-2 textbase md:text-2xl font-black logo- color text-[#f1da9f]">
               TOBEKFOODS
             </span>
           </a>
@@ -54,7 +54,7 @@ const Nav: React.FC<NavProps> = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="transition-all duration-500 absolute top-0 right-0 w-1/2 h-screen bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 z-100">
+          <nav className="transition-all duration-500 absolute top-0 right-0 w-1/2 h-screen bg-blue-800 bg-opacity-90 flex flex-col items-center justify-center space-y-6 z-100">
             <button
               className="block md:hidden text-5xl absolute top-2 right-2"
               onClick={() => setIsMenuOpen(false)}

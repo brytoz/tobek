@@ -3,14 +3,14 @@ import Why from "../components/home/Why";
 import ContactComp from "../components/home/ContactComp";
 import Footer from "../components/Footer";
 import ProductsCards from "../components/home/ProductsCards";
-import HeroCarousel from "../components/home/carousal/HeroCarousel";
+import HeroSection from "../components/home/HeroSection";
 
 const Index = () => {
   return (
     <div className="m-0">
       <Nav />
    
-      <HeroCarousel />
+      <HeroSection />
 
       <Why />
 
