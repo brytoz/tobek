@@ -62,7 +62,7 @@ const Why = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
           >
-            <img src={X01} alt="image" className="rounded-xl h-4/5 w-auto" />
+            <img src={X01} alt="image" className="rounded-xl md:h-4/5 w-auto" />
           </motion.div>
         </motion.div>
 
@@ -106,7 +106,7 @@ const Why = () => {
                   whileHover={{ scale: 1.05, rotate: 3 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <img src={LOGO4} alt="" className="w-20 h-20 md:w-auto md:h-auto" />
+                  <img src={LOGO4} alt="" className="w-auto  h-auto" />
                 </motion.div>
               </div>
               <div className="w-4/5 space-y-2">
@@ -131,7 +131,7 @@ const Why = () => {
                   whileHover={{ scale: 1.05, rotate: -3 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <img src={LOGO5} alt="" className="w-20 h-20 md:w-auto md:h-auto" />
+                  <img src={LOGO5} alt="" className=" w-auto  h-auto" />
                 </motion.div>
               </div>
               <div className="w-4/5 space-y-2">
@@ -155,7 +155,7 @@ const Why = () => {
                   whileHover={{ scale: 1.05, rotate: 3 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <img src={LOGO6} alt="" className="w-20 h-20 md:w-auto md:h-auto" />
+                  <img src={LOGO6} alt="" className=" :w-auto  h-auto" />
                 </motion.div>
               </div>
               <div className="w-4/5 space-y-2">

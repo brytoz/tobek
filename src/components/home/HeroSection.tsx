@@ -76,7 +76,7 @@ const HeroSection = () => {
  
   // bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-red-900 via-rose-900 to-purple-900
+    <div className="pt-12 md:pt-0 relative min-h-screen bg-gradient-to-br from-red-900 via-rose-900 to-purple-900
  overflow-hidden">
       <div className="absolute inset-0">
         <motion.div
