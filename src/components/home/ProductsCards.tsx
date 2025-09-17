@@ -53,7 +53,7 @@ const ProductsCards = () => {
         <div className="w-full text-center">
           <a
             href="/products"
-            className="rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white/90 font-bold px-6 py-3 cursor-pointer"
+            className="rounded-full bg-gradient-to-r  from-red-900 via-rose-900 to-purple-900 text-white/90 font-bold px-6 py-3 cursor-pointer"
           > 
             Show more
           </a>

@@ -31,6 +31,7 @@ const slides: Slide[] = [
 ];
 
 const HeroSection = () => {
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -68,15 +69,15 @@ const HeroSection = () => {
       opacity: 1,
       scale: 1,
       x: 0,
-      transition: { duration: 0.8, ease: "easeOut" as any },
+      transition: { duration: 0.8, ease: "easeOut" as any},
     },
   };
 
+ 
+  // bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900
   return (
-    <div
-      className="relative min-h-screen bg-gradient-to-br from-red-900 via-rose-900 to-purple-900
- overflow-hidden"
-    >
+    <div className="relative min-h-screen bg-gradient-to-br from-red-900 via-rose-900 to-purple-900
+ overflow-hidden">
       <div className="absolute inset-0">
         <motion.div
           className="absolute top-20 left-10 w-32 h-32 bg-yellow-400/10 rounded-full blur-xl"
@@ -120,6 +121,9 @@ const HeroSection = () => {
                   className="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
+                  style={{
+        backgroundImage: "linear-gradient(to bottom right, #dfd7c3, #cbbba0, #a6987a)"
+      }}
                 >
                   Processing service
                 </motion.span>{" "}
@@ -135,16 +139,20 @@ const HeroSection = () => {
               every product delivers exceptional taste and quality straight to
               your table.
             </motion.p>
+           
 
             <motion.div className="flex space-x-4" variants={itemVariants}>
               <motion.a
                 href="/contact"
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transform transition-all duration-200"
+                className="bg-gradient-to-r text-gray-900 px-8 py-4 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transform transition-all duration-200"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 25px 50px -12px rgba(251, 191, 36, 0.5)",
                 }}
                 whileTap={{ scale: 0.95 }}
+                style={{
+                  backgroundImage: "linear-gradient(to bottom right, #dfd7c3, #cbbba0, #a6987a)"
+                }}
               >
                 Order now
               </motion.a>
@@ -170,37 +178,42 @@ const HeroSection = () => {
             animate="visible"
           >
             <motion.div className="relative z-10">
-              <div className="relative bg-gradient-to-br from-orange-500 via-red-500 to-red-600 rounded-3xl p-8 shadow-2xl">
-                <motion.div
-                  className="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-bold text-sm shadow-lg z-20"
-                  animate={{ rotate: [0, 5, -5, 0] }}
-                  transition={{ duration: 2, repeat: Infinity, delay: 2 }}
-                >
-                  FEATURED
-                </motion.div>
+               {/* bg-gradient-to-br from-orange-500 via-red-500 to-red-600 */}
+      <div 
+      style={{
+        backgroundImage: "linear-gradient(to bottom right, #dfd7c3, #cbbba0, #a6987a)"
+      }}
+      className="relative bg-gradient-to-br  rounded-3xl p-8 shadow-2xl">
+        <motion.div
+          className="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 px-6 py-2 rounded-full font-bold text-sm shadow-lg z-20"
+          animate={{ rotate: [0, 5, -5, 0] }}
+          transition={{ duration: 2, repeat: Infinity, delay: 2 }}
+        >
+          FEATURED
+        </motion.div>
 
-                {/* Carousel Image */}
-                <div className="w-full h-80 rounded-2xl shadow-inner relative overflow-hidden">
-                  <AnimatePresence mode="wait">
-                    <motion.div
-                      key={slide.id}
-                      className="absolute inset-0 bg-cover bg-center"
-                      style={{ backgroundImage: `url(${slide.imageUrl})` }}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ duration: 1 }}
-                    />
-                  </AnimatePresence>
-                </div>
+        {/* Carousel Image */}
+        <div className="w-full h-80 rounded-2xl shadow-inner relative overflow-hidden">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={slide.id}
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${slide.imageUrl})` }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+            />
+          </AnimatePresence>
+        </div>
 
-                {/* Dish Info */}
-                <div className="mt-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">{slide.title}</h3>
-                  <p className="text-red-100 text-sm">{slide.description}</p>
-                </div>
-              </div>
-            </motion.div>
+        {/* Dish Info */}
+        <div className="mt-6 text-gray-700">
+          <h3 className="text-2xl font-bold mb-2">{slide.title}</h3>
+          <p className="text-gray-900 text-sm">{slide.description}</p>
+        </div>
+      </div>
+    </motion.div>
 
             {/* Decorative Elements */}
             <motion.div

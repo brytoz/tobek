@@ -19,7 +19,7 @@ const ContactComp = () => {
           </div>
 
           <div className="pt-4">
-            <a href="mailto:info@tobekfoods.com" className="rounded-full px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white/90 font-black text-base md:text-sm "> Mail Us</a>
+            <a href="mailto:info@tobekfoods.com" className="rounded-full px-8 py-4 bg-gradient-to-r  from-red-900 via-rose-900 to-purple-900 text-white/90 font-black text-base md:text-sm "> Mail Us</a>
           </div>
         </div>
       </div>
